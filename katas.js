@@ -32,3 +32,12 @@ function persistence(num) {
 }
 
 console.log(persistence(39));
+
+// Challenge 4
+
+function validatePIN (pin) {
+  const regex =  /^\d+$/;
+  return pin.match(regex) && (pin.length === 4 || pin.length === 6) ? true : false;
+}
+
+console.log(validatePIN('-1.234'))
