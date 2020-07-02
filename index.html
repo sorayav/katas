@@ -24,7 +24,7 @@
     Return the words of the initial song that Polycarpus used to make a dubsteb remix. Separate the words with a space. -->
   
 
-    <!-- Challenge 2:
+  <!-- Challenge 2:
     In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
 
     Example:
@@ -36,9 +36,10 @@
     Notes:
 
     The number can be negative already, in which case no change is required.
-    Zero (0) is not checked for any specific sign. Negative zeros make no mathematical sense. -->
+    Zero (0) is not checked for any specific sign. Negative zeros make no mathematical sense. 
+  -->
 
-    <!-- Challenge 3:
+  <!-- Challenge 3:
     
     Write a function, persistence, that takes in a positive parameter num and returns its multiplicative persistence, which is the number of times you must multiply the digits in num until you reach a single digit.
 
@@ -50,9 +51,10 @@
     persistence(999) === 4 // because 9*9*9 = 729, 7*2*9 = 126,
                            // 1*2*6 = 12, and finally 1*2 = 2
 
-    persistence(4) === 0 // because 4 is already a one-digit number -->
+    persistence(4) === 0 // because 4 is already a one-digit number 
+  -->
 
-    <!-- Challenge 4:
+  <!-- Challenge 4:
     ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits.
 
     If the function is passed a valid PIN string, return true, else return false.
@@ -61,7 +63,23 @@
 
     validatePIN("1234") === true
     validatePIN("12345") === false
-    validatePIN("a234") === false -->
+    validatePIN("a234") === false 
+  -->
+
+  <!-- Challenge 5:
+    In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
+
+    Example:
+
+    highAndLow("1 2 3 4 5");  // return "5 1"
+    highAndLow("1 2 -3 4 5"); // return "5 -3"
+    highAndLow("1 9 3 4 -5"); // return "9 -5"
+    Notes:
+
+    All numbers are valid Int32, no need to validate them.
+    There will always be at least one number in the input string.
+    Output string must be two numbers separated by a single space, and highest number is first. 
+  -->
 
     
   <script src="katas.js"></script>

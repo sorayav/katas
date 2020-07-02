@@ -40,4 +40,22 @@ function validatePIN (pin) {
   return pin.match(regex) && (pin.length === 4 || pin.length === 6) ? true : false;
 }
 
-console.log(validatePIN('-1.234'))
+console.log(validatePIN('-1.234'));
+
+// Challenge 5
+
+// function highAndLow(numbers){
+//   let sortNumbers = numbers.split(' ').sort((a,b) => b-a);
+//   sortNumbers.splice(1, sortNumbers.length -2);
+//   const string = sortNumbers.toString().split(',').join(' ');
+//   return string.includes(' ') ? string : `${string} ${string}`;
+// }
+
+// Another easier solution for Challenge 5:
+
+function highAndLow(numbers) {
+  numbers = numbers.split(' ');
+  return `${Math.max(...numbers)} ${Math.min(...numbers)}`
+}
+
+console.log(highAndLow("42"));
